@@ -46,11 +46,13 @@ function install_pip {
 
 function install_pyrocksdb {
 #	$python -m pip install --force-reinstall -v "Cython=0.29.32"
+  _info "Cython version $(cython --version)"
 	$python -m pip install git+git://github.com/stephan-hof/pyrocksdb.git || _error "Could not install pyrocksdb" 1
 }
 
 function install_python_rocksdb {
 #    $python -m pip install --force-reinstall -v "Cython=0.29.32"
+  _info "Cython version $(cython --version)"
 	$python -m pip install python-rocksdb || _error "Could not install python_rocksdb" 1
 }
 
