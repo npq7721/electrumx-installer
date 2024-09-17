@@ -45,7 +45,7 @@ function install_pip {
 }
 
 function install_pyrocksdb {
-	$python -m pip install "Cython>=0.20"
+	$python -m pip install "Cython=0.29.32"
 	$python -m pip install git+git://github.com/stephan-hof/pyrocksdb.git || _error "Could not install pyrocksdb" 1
 }
 
