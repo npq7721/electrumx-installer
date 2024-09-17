@@ -50,7 +50,7 @@ function install_pyrocksdb {
 }
 
 function install_python_rocksdb {
-    $python -m pip install "Cython=0.29.35"
+    $python -m pip install "Cython=0.29.32"
 	$python -m pip install python-rocksdb || _error "Could not install python_rocksdb" 1
 }
 
