@@ -57,7 +57,8 @@ function install_python_rocksdb {
   $python -m pip uninstall Cython
   _info "install Cython 0.29.32"
   $python -m pip install -Iv "Cython=0.29.32"
-	$python -m pip install python-rocksdb || _error "Could not install python_rocksdb" 1
+  _info "install python-rocksdb 0.7.0"
+	$python -m pip install "python-rocksdb=0.7.0" || _error "Could not install python_rocksdb" 1
 }
 
 function add_user {
